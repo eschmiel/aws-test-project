@@ -1,4 +1,4 @@
-import { Button, Container, Stack, TextField, Typography } from "@mui/material"
+import { Box, Button, Stack, TextField, Typography } from "@mui/material"
 import { useState, type Dispatch, type SetStateAction, type SubmitEventHandler } from "react"
 
 export const NameForm = ({setName}: NameFormProps) => {
@@ -9,7 +9,7 @@ export const NameForm = ({setName}: NameFormProps) => {
         setName(nameInputVal);
     }
     return (
-        <Container component='form' sx={{marginTop:'100px'}} onSubmit={submitHandler}>
+        <Box component='form' onSubmit={submitHandler}>
             <Stack spacing={3} sx={{alignItems: 'center'}}>
                 <Typography variant='h5' align='center'>What is your name, hero?</Typography>
                 <TextField 
@@ -20,7 +20,7 @@ export const NameForm = ({setName}: NameFormProps) => {
                 />
                 <Button variant='contained' type='submit'>Enter the Fray</Button>
             </Stack>
-        </Container>
+        </Box>
     )
 }
 
