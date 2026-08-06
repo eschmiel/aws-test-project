@@ -15,7 +15,7 @@ export const Content = () => {
     return (     
         
         <Container sx={{marginTop:'100px', alignItems: 'center'}}>
-            <Box sx={{border: 'black 1px solid', width:'500px', margin: 'auto'}}>
+            <Box sx={{width:'500px', margin: 'auto'}}>
             {
                 heroName 
                 ? <MainPlayerInfo name={heroName} hp={heroHP} />
