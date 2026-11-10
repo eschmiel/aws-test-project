@@ -1,0 +1,10 @@
+name: Github Actions Test
+run-name: Trying out Github Actions
+on:
+  push:
+    branches:
+      - main
+jobs:
+  Testo:
+    steps:
+      - run: echo "yoooo"
