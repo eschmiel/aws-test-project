@@ -8,5 +8,5 @@ jobs:
   Testo:
     runs-on: ubuntu-latest
     steps:
-      - run: cd FE
+      - run: cd ./FE
       - run: npx run build
