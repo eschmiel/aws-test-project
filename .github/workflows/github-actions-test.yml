@@ -8,4 +8,5 @@ jobs:
   Testo:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "yoooo"
+      - run: cd FE
+      - run: npx run build
