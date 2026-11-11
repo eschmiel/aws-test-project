@@ -13,4 +13,4 @@ jobs:
         with: 
           node-version: 22.19.0
       - run: cd ./FE
-      - run: npx run build
+      - run: npm run build
