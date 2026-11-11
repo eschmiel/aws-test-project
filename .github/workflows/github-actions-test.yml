@@ -8,8 +8,8 @@ jobs:
   Testo:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@7
-      - uses: actions/setup-node@7
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
         with: 
           node-version: 22.19.0
       - run: cd ./FE
