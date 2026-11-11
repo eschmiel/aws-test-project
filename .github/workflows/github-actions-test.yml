@@ -8,5 +8,9 @@ jobs:
   Testo:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@7
+      - uses: actions/setup-node@7
+        with: 
+          node-version: 22.19.0
       - run: cd ./FE
       - run: npx run build
