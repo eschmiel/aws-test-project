@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+
 jobs:
   Testo:
     runs-on: ubuntu-latest
@@ -12,7 +13,14 @@ jobs:
       - uses: actions/setup-node@v7.1.0
         with: 
           node-version: 22.19.0
+      - uses: aws-actions/configure-aws-credentials@v6.3.0
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID}}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
       - run: npm i typescript
         working-directory: ./FE
       - run: npm run build
         working-directory: ./FE
+      - run: aws s3 sync . s3://test-egs-site -- delete
+        working-directory: ./FE/dist
