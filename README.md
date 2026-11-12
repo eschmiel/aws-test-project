@@ -17,3 +17,9 @@ TO-DO:
 - API Gateway to access lambda?
 
 beep boop trigger action
+
+aws s3 rm s3://test-site-egs --recursive
+
+aws s3api put-object --bucket test-site-egs --body ./FE/dist/index.html --key index.html
+
+we need to clear out the bucket and then recursively go through every file in dist and upload it

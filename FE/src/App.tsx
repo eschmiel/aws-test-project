@@ -12,6 +12,7 @@ function App() {
   )
 }
 
-const Title = () => <Typography variant='h1' align='center'>Lambda Quest</Typography>
+const Title = () => <Typography variant='h1' align='center'>Lambda Questssss</Typography>
 
 export default App
+//
