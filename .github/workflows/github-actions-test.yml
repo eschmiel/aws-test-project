@@ -19,7 +19,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-session-token: ${{ secrets.AWS_SESSION }}
           aws-region: us-east-1
-      - run: npm i typescript
+      - run: npm i
         working-directory: ./FE
       - run: npm run build
         working-directory: ./FE
