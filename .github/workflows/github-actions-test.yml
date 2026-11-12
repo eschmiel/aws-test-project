@@ -23,5 +23,5 @@ jobs:
         working-directory: ./FE
       - run: npm run build
         working-directory: ./FE
-      - run: aws s3 sync . s3://test-egs-site --delete
+      - run: aws s3 sync . s3://test-site-egs --delete
         working-directory: ./FE/dist
